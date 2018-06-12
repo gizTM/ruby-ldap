@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run: sudo apt-get update
       - run: sudo apt-get install -y libldap2-dev build-essential
-      - run: ruby extconf.rb --with-openldap1
+      - run: ruby extconf.rb --with-openldap2
       - run: sudo apt-get install libsasl2-dev
       - run: make clean
       - run: make
