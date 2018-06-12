@@ -24,9 +24,9 @@ jobs:
       - run: sudo apt-get install libsasl2-dev
       - run: make clean
       - run: make
-      - run: make install
+      - run: sudo make install
       - run: gem build ruby-ldap.gemspec
-      - run: gem install ruby-ldap-0.9.19.gem
+      - run: sudo gem install ruby-ldap-0.9.19.gem
 
       # Download and cache dependencies
       - restore_cache:
