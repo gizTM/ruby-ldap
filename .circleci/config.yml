@@ -22,6 +22,7 @@ jobs:
       - run: sudo apt-get install -y libldap2-dev build-essential
       - run: ruby extconf.rb --with-openldap1
       - run: sudo apt-get install libsasl2-dev
+      - run: make clean
       - run: make
       - run: make install
       - run: gem build ruby-ldap.gemspec
